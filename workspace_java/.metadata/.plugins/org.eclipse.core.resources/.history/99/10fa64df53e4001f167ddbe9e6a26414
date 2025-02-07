@@ -1,0 +1,14 @@
+package org.joonzis.ex;
+
+public class Ex03_TeamMain {
+
+	public static void main(String[] args) {
+		
+		Ex03_Team team = new Ex03_Team("김씨");
+		Ex03_Team team = new Ex03_Team("이씨");
+		Ex03_Team team = new Ex03_Team("박씨");
+		// TODO 자동 생성된 메소드 스텁
+
+	}
+
+}

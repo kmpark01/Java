@@ -1,0 +1,13 @@
+package org.joonzis.test;
+
+public class SingerSongMain {
+
+	public static void main(String[] args) {
+		
+		Singer singer = new Singer();
+		singer.output();
+		// TODO 자동 생성된 메소드 스텁
+
+	}
+
+}

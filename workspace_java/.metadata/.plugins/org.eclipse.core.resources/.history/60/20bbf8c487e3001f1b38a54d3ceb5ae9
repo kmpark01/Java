@@ -1,0 +1,15 @@
+package org.joonzis.ex;
+
+public class Ex01_Triangle {
+	
+	int width, height;
+	
+	public Ex01_Triangle(int w, int h) {
+		// TODO 자동 생성된 생성자 스텁
+	}
+
+	public Ex01_Triangle() {
+		// TODO 자동 생성된 생성자 스텁
+	}
+
+}

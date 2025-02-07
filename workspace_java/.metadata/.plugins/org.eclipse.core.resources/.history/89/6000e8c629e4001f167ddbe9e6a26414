@@ -1,0 +1,50 @@
+package org.joonzis.test;
+
+public class Grade {
+	
+	int kor, eng, mat;
+	double avg;
+	char grade;
+	
+	public Grade() {
+		kor = 80;
+		eng = 60;
+		mat = 100;
+		// TODO 자동 생성된 생성자 스텁
+	}
+
+	public Grade(int kor) {
+		this.kor = kor;
+		eng = 70;
+		mat = 65;
+		// TODO 자동 생성된 생성자 스텁
+	}
+
+	public Grade(int kor, int eng, int mat) {
+		super();
+		this.kor = kor;
+		this.eng = eng;
+		this.mat = mat;
+	}
+	
+	double getAverage() {
+		return (kor + eng + mat)/3;
+	}
+	
+	char getGrade() {
+		if(avg >= 90) {
+			return grade = 'A';
+		} else if(avg >= 80) {
+			return grade = 'B';
+		}else if(avg >= 70) {
+			return grade = 'C';
+		}else if(avg >= 60) {
+			return grade = 'D';
+		} else {
+			return grade = 'F';
+		}
+	}
+	
+	
+
+}

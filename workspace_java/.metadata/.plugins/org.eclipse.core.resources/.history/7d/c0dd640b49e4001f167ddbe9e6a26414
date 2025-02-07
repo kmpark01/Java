@@ -1,0 +1,18 @@
+package org.joonzis.test;
+
+import java.util.Scanner;
+
+public class Song {
+	
+	String title, country;
+	
+	Scanner sc = new Scanner(System.in);
+
+	public Song(String title, String country) {
+		super();
+		title = sc.nextLine();
+		this.title = title;
+		this.country = country;
+	}
+
+}

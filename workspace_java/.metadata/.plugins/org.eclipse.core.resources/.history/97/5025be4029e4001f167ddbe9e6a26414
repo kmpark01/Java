@@ -1,0 +1,14 @@
+package org.joonzis.test;
+
+public class Student {
+	
+	String name, dept;
+	
+	Grade garde = new Grade();
+	
+	public Student() {
+		name = "박경민";
+		// TODO 자동 생성된 생성자 스텁
+	}
+
+}

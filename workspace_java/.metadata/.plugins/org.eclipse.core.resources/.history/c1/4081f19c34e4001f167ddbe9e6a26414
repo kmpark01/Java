@@ -1,0 +1,17 @@
+package org.joonzis.test;
+
+public class Song {
+	
+	String title, country;
+
+	public Song(String title, String country) {
+		super();
+		this.title = title;
+		this.country = country;
+	}
+
+	public Song() {
+		// TODO 자동 생성된 생성자 스텁
+	}
+
+}

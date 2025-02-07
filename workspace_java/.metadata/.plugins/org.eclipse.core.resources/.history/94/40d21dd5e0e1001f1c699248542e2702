@@ -1,0 +1,27 @@
+package org.joonzis.text;
+
+import java.util.Scanner;
+
+class Rect{
+	
+	Scanner sc = new Scanner(System.in);
+	int width;
+	int height;
+	
+	void init() {
+		System.out.println("너비를 입력하세요 >>");
+		width = sc.nextInt();
+		System.out.println("높이를 입력하세요 >>");
+		height = sc.nextInt();
+		
+	}
+}
+
+public class RectMain {
+
+	public static void main(String[] args) {
+		// TODO 자동 생성된 메소드 스텁
+
+	}
+
+}

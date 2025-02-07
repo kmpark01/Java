@@ -1,0 +1,46 @@
+package org.joonzis.text;
+
+import java.util.Scanner;
+
+class Triangle{
+	Scanner sc = new Scanner(System.in);
+	int width;
+	int height;
+	double size;
+	
+	void init() {
+		System.out.println("너비를 입력하세요 >>");
+		width = sc.nextInt();
+		System.out.println("높이를 입력하세요 >>");
+		height = sc.nextInt();
+		
+	}
+	
+	void info() {
+		System.out.println("너비 :" + width);
+		System.out.println("높이 :" + height);
+		System.out.println("넓이 : " + size);
+	}
+	
+	double calcArea() {
+		size = width*height/2;
+		return size;
+	}
+}
+
+public class TriangleMain {
+
+	public static void main(String[] args) {
+		
+		Triangle triangle = new Triangle();
+		
+		
+		triangle.calcArea();
+		System.out.println(triangle.size);
+		triangle.init();
+		triangle.info();
+		// TODO 자동 생성된 메소드 스텁
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package org.joonzis.test;
+
+import java.util.Scanner;
+
+public class Test10 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int stdNum = 0;
+		
+				
+		int[][] std = new int[5][stdNum];
+		
+		for(int i = 0; i < std.length; i++) {
+			System.out.println("학생 수를 입력하세요");
+			stdNum = sc.nextInt();
+			for (stdNum = 0; stdNum < std[i].length; stdNum++) {
+			}
+			System.out.println(std[i][stdNum]);
+		}
+	}
+
+}

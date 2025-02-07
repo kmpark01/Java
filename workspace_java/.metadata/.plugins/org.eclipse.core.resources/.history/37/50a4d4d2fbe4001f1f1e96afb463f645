@@ -1,0 +1,33 @@
+package org.joonzis.test;
+
+class Human{
+	String name;
+	int age;
+	
+	public Human(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	
+	void output() {
+		System.out.println("이름 : " + name + "," + "나이 : " + age);
+	}
+}
+
+class Student extends Human{
+	
+}
+
+class Wocker extends Human{
+	
+}
+
+public class Test01 {
+
+	public static void main(String[] args) {
+		// TODO 자동 생성된 메소드 스텁
+
+	}
+
+}

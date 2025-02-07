@@ -1,0 +1,14 @@
+package org.joonzis.test;
+
+public class StudentGradeMain {
+	public static void main(String[] args) {
+		
+		Student std = new Student();
+		std.output();
+		
+		
+		Student std2 = new Student("김", "전자공학과", null);
+		std2.output();
+	}
+
+}

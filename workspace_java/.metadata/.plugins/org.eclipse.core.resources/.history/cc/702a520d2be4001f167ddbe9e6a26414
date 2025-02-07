@@ -1,0 +1,11 @@
+package org.joonzis.test;
+
+public class StudentGradeMain {
+	public static void main(String[] args) {
+		
+		Student std = new Student();
+		std.output();
+		
+	}
+
+}

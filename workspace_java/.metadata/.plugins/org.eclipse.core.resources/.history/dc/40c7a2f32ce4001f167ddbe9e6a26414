@@ -1,0 +1,43 @@
+package org.joonzis.test;
+
+public class Student {
+	
+	String name, dept;
+	
+	Grade grade;
+	
+	public Student() {
+		name = "박경민";
+		dept = "컴퓨터공학과";
+		// TODO 자동 생성된 생성자 스텁
+	}
+	
+	
+	public Student(String name) {
+		super();
+		this.name = name;
+		dept = "전자공학과";
+	}
+
+	public Student(String name, String dept) {
+		super();
+		this.name = name;
+		this.dept = dept;
+	}
+	
+	void setScore() {
+		this.grade = new Grade();
+	}
+
+	void output() {
+		System.out.println("이름 :" + name);
+		System.out.println("학과 :" + dept);
+		System.out.println("국어 점수 :" + grade.kor);
+		System.out.println("영어 점수 :" + grade.eng);
+		System.out.println("수학 점수 :" + grade.mat);
+		System.out.println("평균 :" + grade.getAverage());
+		System.out.println("학점 :" + grade.getGrade());
+		
+	}
+
+}

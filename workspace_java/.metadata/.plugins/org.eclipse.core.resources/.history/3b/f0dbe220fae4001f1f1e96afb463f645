@@ -1,0 +1,72 @@
+package org.joonzis.test;
+
+class Human{
+	char gender;
+}
+
+class Student extends Human{
+	String name, school;
+	int age;
+	
+	public Student() {
+		// TODO 자동 생성된 생성자 스텁
+	}
+
+	public Student(String name, String school, int age, char gender) {
+		super();
+		this.name = name;
+		this.school = school;
+		this.age = age;
+		this.gender = gender;
+	}
+	
+	void output() {
+		System.out.println("이름 : " + name);
+		System.out.println("학교 : " + school);
+		System.out.println("나이 : " + age);
+		System.out.println("성별 : " + gender);
+	}
+	
+}
+
+class Worker extends Human{
+	String name, job;
+	int age;
+	
+	public Worker() {
+		// TODO 자동 생성된 생성자 스텁
+	}
+
+	public Worker(String name, String job, int age, char gender) {
+		super();
+		this.name = name;
+		this.job = job;
+		this.age = age;
+		this.gender = gender;
+	}
+	
+	void output() {
+		System.out.println("이름 : " + name);
+		System.out.println("학교 : " + job);
+		System.out.println("나이 : " + age);
+		System.out.println("성별 : " + gender);
+	}
+	
+}
+
+public class Test01 {
+
+	public static void main(String[] args) {
+		
+		Student std = new Student("박", "가천대", 26, '남');
+		std.output();
+		
+		System.out.println("--------------");
+		
+		Worker worker = new Worker("김", "sk", 30, '여');
+		worker.output();
+		// TODO 자동 생성된 메소드 스텁
+
+	}
+
+}

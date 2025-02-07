@@ -1,0 +1,39 @@
+package org.joonzis.ex;
+
+class Espresso{
+	String origin;
+	public Espresso() {
+		// TODO 자동 생성된 생성자 스텁
+	}
+
+	public Espresso(String origin) {
+		this.origin = origin;
+		// TODO 자동 생성된 생성자 스텁
+	}
+	
+	void taste() {
+		System.out.println("쓰다");
+	}
+}
+
+class Latte extends Espresso{
+	String milk;
+	public Latte() {
+		// TODO 자동 생성된 생성자 스텁
+	}
+
+	public Latte(String milk, String origin) {
+		super(origin);
+		this.milk = milk;
+		// TODO 자동 생성된 생성자 스텁
+	}
+}
+
+public class Ex05_Method_override {
+
+	public static void main(String[] args) {
+		// TODO 자동 생성된 메소드 스텁
+
+	}
+
+}

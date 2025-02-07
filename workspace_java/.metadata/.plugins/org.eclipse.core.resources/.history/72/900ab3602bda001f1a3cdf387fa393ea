@@ -1,0 +1,35 @@
+package org.joonzis.test;
+
+import java.util.Scanner;
+
+public class Test10{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int[][] classroom = new int[5][]; // 5줄의 교실 생성
+
+        // 각 줄의 학생 수 입력받아 배열 할당
+        for (int i = 0; i < classroom.length; i++) {
+            System.out.print((i + 1) + "번째 줄의 학생 수를 입력하세요: ");
+            int studentCount = sc.nextInt(); // 학생 수 입력
+            classroom[i] = new int[studentCount]; // 학생 수만큼 공간 할당
+
+            // 공간에 1 저장
+            for (int j = 0; j < classroom[i].length; j++) {
+                classroom[i][j] = 1;
+            }
+        }
+
+        // 배열 출력
+        System.out.println("\n할당된 2차원 배열:");
+        for (int i = 0; i < classroom.length; i++) {
+            System.out.print((i + 1) + "번째 줄: ");
+            for (int j = 0; j < classroom[i].length; j++) {
+                System.out.print(classroom[i][j] + " ");
+            }
+            System.out.println(); // 줄바꿈
+        }
+
+        sc.close(); // Scanner 닫기
+    }
+}
