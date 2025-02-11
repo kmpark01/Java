@@ -12,11 +12,8 @@ public class Ex01_primitive_array {
 		
 		System.out.println(Arrays.toString(arr));
 		
-		for(int i = 0; i < 3; i++) {
+		for(int i = 0; i < arr.length; i++) {
 			System.out.println(arr2[i]);
 		}
-		
-		System.out.println(arr[3]);
 	} 
-
 }
