@@ -22,5 +22,4 @@ public class Ex02_iterator {
 			System.out.println(itr.next());
 		}
 	}
-
 }
