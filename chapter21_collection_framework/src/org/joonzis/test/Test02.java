@@ -29,16 +29,22 @@ class Bingo {
     
     public void check() {
     	Scanner sc = new Scanner(System.in);
-    	System.out.print("빙고 번호를 입력하세요 >>");
-    	int myNum = sc.nextInt();
     	
-    	for(int i = 0; i < bingo.length; i++) {
-    		for(int k = 0; k < bingo[i].length; k++) {
-    			if(myNum == bingo[i][k]) {
-    				bingo[i][k] = 0;
+    	int myNum;
+    	
+    	do {
+    		System.out.print("빙고 번호를 입력하세요 >>");
+    		myNum = sc.nextInt();
+    		
+    		for(int i = 0; i < bingo.length; i++) {
+    			for(int k = 0; k < bingo[i].length; k++) {
+    				if(myNum == bingo[i][k]) {
+    					bingo[i][k] = 0;
+    				}
     			}
     		}
-    	}
+    		System.out.println(this);
+		} while (myNum != 0);
     }
 
     @Override
@@ -46,7 +52,7 @@ class Bingo {
         StringBuilder sb = new StringBuilder("빙고판:\n");
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
-                sb.append(bingo[i][j] == 0 ? "*" : bingo[i][j] + "\t");
+                sb.append(bingo[i][j] == 0 ? "*" + "\t" : bingo[i][j] + "\t");
             }
             sb.append("\n");
         }
@@ -61,6 +67,6 @@ public class Test02 {
         
         System.out.println(bin);
         bin.check();
-        System.out.println(bin);
+        //System.out.println(bin);
     }
 }
