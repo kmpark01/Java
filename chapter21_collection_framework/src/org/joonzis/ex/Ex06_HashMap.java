@@ -40,8 +40,8 @@ public class Ex06_HashMap {
 			System.out.println("이름(key) : " + key + ", 나이(value) : " + value);
 		}
 		
-		// TODO 자동 생성된 메소드 스텁
-
+		map.clear();
+		System.out.println(map);
 	}
 
 }
