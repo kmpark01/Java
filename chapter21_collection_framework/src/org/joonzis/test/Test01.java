@@ -9,6 +9,7 @@
 
 package org.joonzis.test;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -18,6 +19,7 @@ class Board{
 	String title, content;
 	
 	Date register = new Date();
+	SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 E요일");
 
 	public Board(String title, String content) {
 		this.title = title;
@@ -26,7 +28,7 @@ class Board{
 
 	@Override
 	public String toString() {
-		return "제목 : " + title + ", 내용 : " + content + ", " + register;
+		return "제목 : " + title + ", 내용 : " + content + ", " + sdf.format(register);
 	}
 	
 	

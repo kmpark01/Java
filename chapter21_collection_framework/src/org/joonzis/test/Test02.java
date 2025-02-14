@@ -43,13 +43,28 @@ class Bingo {
     				}
     			}
     		}
+    		
     		System.out.println(this);
+    		for(int i = 0; i < bingo.length; i++) {
+    			int colCount = 0;
+    			for(int k = 0; k < bingo[i].length; k++) {
+    				if(bingo[i][k] == 0) {
+    					colCount++;
+    				}
+    				if(colCount == 5) {
+    					System.out.println("가로 빙고");
+    					System.out.println(colCount);
+    					continue;
+    				}
+    			}
+    		}
 		} while (myNum != 0);
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("빙고판:\n");
+        //System.out.println(colCount);
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 sb.append(bingo[i][j] == 0 ? "*" + "\t" : bingo[i][j] + "\t");
