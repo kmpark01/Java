@@ -31,8 +31,6 @@ public class Ex05_FileCopy {
 			System.out.println("파일경로2 : " + file.getPath()); //상대 경로
 		}else {
 			System.out.println("해당 파일을 찾을 수 없습니다");
-
 		}
-
 	}
 }

@@ -41,8 +41,5 @@ public class Ex03_FileOutput {
 				e2.printStackTrace();
 			}
 		}
-		// TODO 자동 생성된 메소드 스텁
-
 	}
-
 }
